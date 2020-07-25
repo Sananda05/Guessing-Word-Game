@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdQuestion"
+    android:background="@drawable/questionback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="16">
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="2"
+            android:background="@android:color/white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/ques3"
+            android:textStyle="bold"
+            android:fontFamily="@font/russo_one"/>
+        <EditText
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="4"
+            android:hint="type"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/hint1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/russo_one"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/roundedbttn"                    android:onClick="hint1"
+                android:text="Hint 1" />
+
+            <Button
+                android:id="@+id/hint2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/russo_one"
+                android:onClick="hint2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/roundedbttn"
+                android:text="Hint 2"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/hint3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/russo_one"
+                android:onClick="hint3"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/roundedbttn"
+                android:text="Hint 3"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/firstAnswer"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/roundedbttn"
+            android:fontFamily="@font/russo_one"
+            android:text="Answer"
+            android:layout_weight="2"
+           />
+
+        <Button
+            android:id="@+id/goQues2"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/roundedbttnblue"
+            android:fontFamily="@font/russo_one"
+            android:text="Go to Next"
+            android:layout_weight="2"
+            android:visibility="invisible"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/TryAgain"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/roundedbttnblue"
+            android:textColor="@android:color/white"
+            android:text="Try Again!"
+            />
+
+    </LinearLayout>
+
+
+    </ScrollView>
